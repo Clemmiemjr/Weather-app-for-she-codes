@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="weatherstyle/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="topbar">
+        <form id="city-form">
+          <input
+            class="search"
+            id="findweather"
+            type="text"
+            placeholder="What is your current city?"
+          />
+          <input type="submit" value="search" class="findcity" />
+        </form>
+        <button class="save">Save</button>
+      </div>
+      <div id="main">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="sun">
+              <img class="please" src="weatherstyle/Sunny.png" alt="Sun" />
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="text">
+              <h2 id="headline" class="headline">
+                Today in London, United Kingdom
+              </h2>
+              <p class="headtemp"><strong>19c | 34f</strong></p>
+              <p class="advice">Bring a jacket, expect rain at 1pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="cards">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="card">
+              <img
+                src="weatherstyle/Sunny.png"
+                class="card-img-top"
+                alt="Sun"
+              />
+              <div class="card-body">
+                <p class="card-text">21c | 36f</p>
+                <p class="card-text">Mon</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img
+                src="weatherstyle/Sunny.png"
+                class="card-img-top"
+                alt="Sun"
+              />
+              <div class="card-body">
+                <p class="card-text">21c | 36f</p>
+                <p class="card-text">Tue</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img
+                src="weatherstyle/Sunny.png"
+                class="card-img-top"
+                alt="Sun"
+              />
+              <div class="card-body">
+                <p class="card-text">21c | 36f</p>
+                <p class="card-text">Wed</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img
+                src="weatherstyle/Sunny.png"
+                class="card-img-top"
+                alt="Sun"
+              />
+              <div class="card-body">
+                <p class="card-text">21c | 36f</p>
+                <p class="card-text">Thur</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card">
+              <img
+                src="weatherstyle/Sunny.png"
+                class="card-img-top"
+                alt="Sun"
+              />
+              <div class="card-body">
+                <p class="card-text">21c | 36f</p>
+                <p class="card-text">Fri</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weatherstyle/weather.js"></script>
+    <script src="weatherstyle/temp.js"></script>
+  </body>
+</html>
