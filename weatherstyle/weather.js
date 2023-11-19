@@ -1,3 +1,18 @@
+function search(event) {
+  event.preventDefault();
+  let searchInputElement = document.querySelector("#search-input");
+  let cityElement = document.querySelector("#current-city");
+  cityElement.innerHTML = searchInputElement.value;
+
+  let apiCity = searchInputElement.value;
+  let apiKey = `8t94954492f3aa97ffbbff3b440e4odd`;
+  let apiURL = `https://api.shecodes.io/weather/v1/current?query=${apiCity}&key=${apiKey}&unit=metric`;
+  axios.get(apiURL).then(showTemp);
+}
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", search);
+
 let city = prompt("What is your city?");
 let weather = {
   paris: {
